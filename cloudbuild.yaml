@@ -1,0 +1,28 @@
+steps:
+  - name: 'python:3.10'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        pip install -r requirements.txt
+        python -m unittest discover
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/employee-api:$COMMIT_SHA'
+      - '.'
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/employee-api:$COMMIT_SHA'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud run deploy employee-api \
+          --image gcr.io/$PROJECT_ID/employee-api:$COMMIT_SHA \
+          --platform managed \
+          --region asia-east1 \
+          --allow-unauthenticated
