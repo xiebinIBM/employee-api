@@ -11,5 +11,5 @@ steps:
         gcloud run deploy employee-api \
           --image gcr.io/$PROJECT_ID/employee-api:$COMMIT_SHA \
           --platform managed \
-          --region asia-east1 \
+          --region asia-east2 \
           --allow-unauthenticated
