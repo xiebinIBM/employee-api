@@ -1,0 +1,118 @@
+Welcome to the Google Cloud CLI! Run "gcloud -h" to get the list of available commands.
+---
+
+C:\Program Files (x86)\Google\Cloud SDK>gcloud init
+Welcome! This command will take you through the configuration of gcloud.
+
+Your current configuration has been set to: [default]
+
+You can skip diagnostics next time by using the following flag:
+  gcloud init --skip-diagnostics
+
+Network diagnostic detects and fixes local network connection issues.
+Checking network connection...done.
+Reachability Check passed.
+Network diagnostic passed (1/1 checks passed).
+
+You must sign in to continue. Would you like to sign in (Y/n)?  y
+
+Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=C41V4ZAk8HvECavpFGwR0GeX9FMQTq&access_type=offline&code_challenge=RDCOiz1RJDLP9-HpPzCTLNhvl4R7EVxKejsK7_Igm70&code_challenge_method=S256
+
+You are signed in as: [xiebin@cn.ibm.com].
+
+Pick cloud project to use:
+ [1] avid-willow-476606-g2
+ [2] fw0h0t-a60z
+ [3] Enter a project ID
+ [4] Create a new project
+Please enter numeric choice or text value (must exactly match list item):  2
+
+Your current project has been set to: [fw0h0t-a60z].
+
+Do you want to configure a default Compute Region and Zone? (Y/n)?  y
+
+Which Google Compute Engine zone would you like to use as project default?
+If you do not specify a zone via a command line flag while working with Compute Engine resources, the default is assumed.
+ [1] Do not set default zone
+ [2] us-east1-b
+ [3] us-east1-c
+ [4] us-east1-d
+ [5] us-east4-c
+ [6] us-east4-b
+ [7] us-east4-a
+ [8] us-central1-c
+ [9] us-central1-a
+ [10] us-central1-f
+ [11] us-central1-b
+ [12] us-west1-b
+ [13] us-west1-c
+ [14] us-west1-a
+ [15] europe-west4-a
+ [16] europe-west4-b
+ [17] europe-west4-c
+ [18] europe-west1-b
+ [19] europe-west1-d
+ [20] europe-west1-c
+ [21] europe-west3-c
+ [22] europe-west3-a
+ [23] europe-west3-b
+ [24] europe-west2-c
+ [25] europe-west2-b
+ [26] europe-west2-a
+ [27] asia-east1-b
+ [28] asia-east1-a
+ [29] asia-east1-c
+ [30] asia-southeast1-b
+ [31] asia-southeast1-a
+ [32] asia-southeast1-c
+ [33] asia-northeast1-b
+ [34] asia-northeast1-c
+ [35] asia-northeast1-a
+ [36] asia-south1-c
+ [37] asia-south1-b
+ [38] asia-south1-a
+ [39] australia-southeast1-b
+ [40] australia-southeast1-c
+ [41] australia-southeast1-a
+ [42] southamerica-east1-b
+ [43] southamerica-east1-c
+ [44] southamerica-east1-a
+ [45] africa-south1-a
+ [46] africa-south1-b
+ [47] africa-south1-c
+ [48] asia-east2-a
+ [49] asia-east2-b
+ [50] asia-east2-c
+Did not print [78] options.
+Too many options [128]. Enter "list" at prompt to print choices fully.
+Please enter numeric choice or text value (must exactly match list item):  27
+
+Your project default Compute Engine zone has been set to [asia-east1-b].
+You can change it by running [gcloud config set compute/zone NAME].
+
+Your project default Compute Engine region has been set to [asia-east1].
+You can change it by running [gcloud config set compute/region NAME].
+
+Error creating a default .boto configuration file. Please run [gsutil config -n] if you would like to create this file.
+The Google Cloud CLI is configured and ready to use!
+
+* Commands that require authentication will use xiebin@cn.ibm.com by default
+* Commands will reference project `fw0h0t-a60z` by default
+* Compute Engine commands will use region `asia-east1` by default
+* Compute Engine commands will use zone `asia-east1-b` by default
+
+Run `gcloud help config` to learn how to change individual settings
+
+This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+Run `gcloud topic configurations` to learn more.
+
+Some things to try next:
+
+* Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+* Run `gcloud topic --help` to learn about advanced features of the CLI like arg files and output formatting
+* Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+Active code page: 932
+
+C:\Program Files (x86)\Google\Cloud SDK>

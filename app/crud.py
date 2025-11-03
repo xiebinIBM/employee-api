@@ -24,6 +24,7 @@ def get_by_query(db: Session, emp_no: str = None, name: str = None,
         query = query.filter(Employee.gender == gender)
     if hire_date:
         query = query.filter(Employee.hire_date == hire_date)
+        
     return query.all()
 
 def create(db: Session, obj: EmployeeCreate):
